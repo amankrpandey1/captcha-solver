@@ -38,7 +38,7 @@ def predict_model(filepath):
 def home():
     return render_template('home.html')
 
-@app.route("/predict", methods = ['GET','POST'])
+@app.route("/predict", methods = ['POST'])
 def predict():
     
     if request.method == 'POST':
